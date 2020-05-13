@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="rootPane" prefHeight="380.0" prefWidth="409.0" style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.UpdateUser">
+    <children>
+        <Label layoutX="99.0" layoutY="21.0" prefHeight="48.0" prefWidth="212.0" text="تعديل بيانات مستخدم" textAlignment="CENTER" textFill="#092486">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+
+        <Button layoutX="343.0" layoutY="341.0" mnemonicParsing="false" onAction="#onBackBtn" style="-fx-background-color: #092486;" text="رجوع" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Button>
+        <Button layoutX="102.0" layoutY="244.0" mnemonicParsing="false" onAction="#onConfirmBtn" style="-fx-background-color: #092486;" text="تأكيد" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Button>
+        <Label layoutX="322.0" layoutY="171.0" text="اسم المتطوع" textFill="#092486">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font></Label>
+        <TextField fx:id="VolunteerlName" layoutX="105.0" layoutY="167.0" prefHeight="25.0" prefWidth="203.0" promptText="اسم المتطوع" />
+
+        <Label layoutX="322.0" layoutY="208.0" text="كلمة المرور" textFill="#092486">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font></Label>
+        <PasswordField fx:id="password" layoutX="105.0" layoutY="204.0" prefHeight="25.0" prefWidth="203.0" promptText="كلمة المرور" />
+
+        <Label fx:id="statusLabel" layoutX="37.0" layoutY="292.0" prefHeight="36.0" prefWidth="336.0" />
+      <ComboBox fx:id="comboBox" layoutX="65.0" layoutY="104.0" onAction="#onComboBoxAction" prefWidth="150.0" promptText="اختر المستخدم" />
+      <Label layoutX="244.0" layoutY="104.0" prefHeight="25.0" prefWidth="141.0" text="اختر المستخدم المراد تعديله" textFill="#092486">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

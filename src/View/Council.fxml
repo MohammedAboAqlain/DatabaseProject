@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="rootPane" prefHeight="380.0" prefWidth="409.0" style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Council">
+    <children>
+        <Label layoutX="94.0" layoutY="22.0" prefHeight="48.0" prefWidth="222.0" text="إنشاء وتحرير مجالس" textAlignment="CENTER" textFill="#092486">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Button layoutX="114.0" layoutY="121.0" onAction="#onCreateCouncil" mnemonicParsing="false" prefHeight="37.0" prefWidth="182.0" style="-fx-background-color: #092486;" text="إنشاء مجلس" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font></Button>
+        <Button layoutX="114.0" layoutY="223.0" onAction="#onDeleteCouncil" mnemonicParsing="false" prefHeight="37.0" prefWidth="182.0" style="-fx-background-color: #092486;" text="حذف مجلس" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font></Button>
+        <Button layoutX="114.0" layoutY="173.0" onAction="#onUpdateCouncil" mnemonicParsing="false" prefHeight="37.0" prefWidth="182.0" style="-fx-background-color: #092486;" text="تعديل مجلس" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font></Button>
+        <Button layoutX="343.0" layoutY="341.0" mnemonicParsing="false" onAction="#onBackbtn" style="-fx-background-color: #092486;" text="رجوع" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>

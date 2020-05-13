@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="rootPane" prefHeight="375.0" prefWidth="406.0" style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LoginAs">
+   <children>
+       <Button layoutX="125.0" layoutY="143.0" onAction="#viewAdminLogin" mnemonicParsing="false" prefHeight="26.0" prefWidth="135.0" style="-fx-background-color: #092486;" text="الدخول كمسؤول" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+       <Button layoutX="125.0" layoutY="212.0" onAction="#viewVolunteerLogin" mnemonicParsing="false" prefHeight="19.0" prefWidth="135.0" style="-fx-background-color: #092486;" text="الدخول كمتطوع" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Label layoutX="91.0" layoutY="45.0" prefHeight="44.0" prefWidth="241.0" text="الدخول إلى البرنامج" textAlignment="CENTER" textFill="#092486">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

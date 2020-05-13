@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="rootPane" prefHeight="380.0" prefWidth="428.0" style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.UpdateStudent">
+    <children>
+        <Label layoutX="111.0" layoutY="14.0" prefHeight="48.0" prefWidth="191.0" text="تعديل بيانات طالب" textAlignment="CENTER" textFill="#092486">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+
+        <ComboBox fx:id="comboBox" layoutX="83.0" layoutY="78.0" onAction="#onComboBoxAction" prefWidth="150.0" promptText="اختر رقم الطالب" />
+        <Label layoutX="253.0" layoutY="78.0" prefHeight="25.0" prefWidth="150.0" text="اختر رقم الطالب المراد تعديله" textFill="#092486">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Label>
+
+        <Button layoutX="299.0" layoutY="277.0" mnemonicParsing="false" onAction="#UpdateStudent" prefHeight="25.0" prefWidth="59.0" style="-fx-background-color: #092486;" text="تأكيد" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Button>
+        <Label layoutX="357.0" layoutY="128.0" text="اسم الطالب" textFill="#092486">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font></Label>
+        <TextField fx:id="studentName" layoutX="224.0" layoutY="124.0" prefHeight="25.0" prefWidth="119.0" promptText="اسم الطالب" />
+        <Label layoutX="357.0" layoutY="165.0" text="اسم الأب" textFill="#092486">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font></Label>
+        <TextField fx:id="parentName" layoutX="224.0" layoutY="161.0" prefHeight="25.0" prefWidth="119.0" promptText="اسم الأب" />
+        <Label layoutX="357.0" layoutY="201.0" text="اسم الجد" textFill="#092486">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font></Label>
+        <TextField fx:id="grandParentName" layoutX="224.0" layoutY="197.0" prefHeight="25.0" prefWidth="119.0" promptText="اسم الجد" />
+        <Label layoutX="352.0" layoutY="235.0" text="اسم العائلة" textFill="#092486">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font></Label>
+        <TextField fx:id="familyName" layoutX="224.0" layoutY="231.0" prefHeight="25.0" prefWidth="119.0" promptText="اسم العائلة" />
+        <Label layoutX="149.0" layoutY="130.0" text="رقم الطالب" textFill="#092486">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font></Label>
+        <TextField fx:id="studentID" layoutX="13.0" layoutY="126.0" prefHeight="25.0" prefWidth="119.0" promptText="رقم الطالب" />
+        <Label layoutX="147.0" layoutY="169.0" text="مكان السكن" textFill="#092486">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font></Label>
+        <TextField fx:id="place" layoutX="13.0" layoutY="165.0" prefHeight="25.0" prefWidth="119.0" promptText="مكان السكن" />
+
+        <Label layoutX="151.0" layoutY="205.0" text="رقم الجوال" textFill="#092486">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font></Label>
+        <TextField fx:id="studentMobile" layoutX="13.0" layoutY="201.0" prefHeight="25.0" prefWidth="119.0" promptText="رقم الجوال" />
+
+        <Button layoutX="374.0" layoutY="341.0" mnemonicParsing="false" onAction="#onBackBtn" style="-fx-background-color: #092486;" text="رجوع" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Button>
+        <Button layoutX="34.0" layoutY="244.0" onAction="#onAddOrDeleteMobileBtn" mnemonicParsing="false" prefHeight="25.0" prefWidth="135.0" style="-fx-background-color: #092486;" text="اضافة/حذف رقم جوال" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Button>
+        <Label fx:id="statusLabel" layoutX="34.0" layoutY="306.0" prefHeight="25.0" prefWidth="321.0" />
+
+    </children>
+</AnchorPane>

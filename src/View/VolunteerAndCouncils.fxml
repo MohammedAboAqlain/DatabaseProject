@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="rootPane" prefHeight="380.0" prefWidth="409.0" style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.VolunteerAndCouncils">
+    <children>
+        <Label layoutX="53.0" layoutY="21.0" prefHeight="48.0" prefWidth="328.0" text="ربط المتطوع بالمجالس التي يعمل عليها" textAlignment="CENTER" textFill="#092486">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Label>
+
+        <Button layoutX="343.0" layoutY="341.0" mnemonicParsing="false" onAction="#onBackBtn" style="-fx-background-color: #092486;" text="رجوع" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Button>
+        <Button layoutX="59.0" layoutY="207.0" mnemonicParsing="false" onAction="#onConfirmBtn" style="-fx-background-color: #092486;" text="تأكيد" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Button>
+
+
+        <Label fx:id="statusLabel" layoutX="37.0" layoutY="258.0" prefHeight="36.0" prefWidth="336.0" />
+        <ComboBox fx:id="VolunteerComboBox" layoutX="53.0" layoutY="124.0" prefWidth="150.0" promptText="اختر المستخدم" />
+        <Label layoutX="232.0" layoutY="124.0" prefHeight="25.0" prefWidth="141.0" text="اختر المستخدم المراد ربطه" textFill="#092486">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Label>
+        <ComboBox fx:id="CouncilComboBox" layoutX="53.0" layoutY="165.0" prefWidth="150.0" promptText="اختر المجلس" />
+        <Label layoutX="232.0" layoutY="165.0" prefHeight="25.0" prefWidth="141.0" text="اختر المجلس المطلوب" textFill="#092486">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

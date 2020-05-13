@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="rootPane" prefHeight="380.0" prefWidth="409.0" style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.UpdateCouncil">
+    <children>
+        <Label layoutX="127.0" layoutY="21.0" prefHeight="48.0" prefWidth="141.0" text="تعديل مجلس" textAlignment="CENTER" textFill="#092486">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+
+        <Button layoutX="343.0" layoutY="341.0" mnemonicParsing="false" onAction="#onBackBtn" style="-fx-background-color: #092486;" text="رجوع" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Button>
+        <Button layoutX="100.0" layoutY="242.0" mnemonicParsing="false" onAction="#onConfirmBtn" style="-fx-background-color: #092486;" text="تأكيد" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Button>
+      <ComboBox fx:id="comboBox" layoutX="81.0" layoutY="86.0" onAction="#onComboboxAction" prefHeight="25.0" prefWidth="194.0" promptText="اختر المجلس المراد تعديله" />
+      <Label layoutX="290.0" layoutY="86.0" prefHeight="25.0" prefWidth="107.0" text="المجلس المراد تعديله" textFill="#092486">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="333.0" layoutY="164.0" text="اسم المجلس" textFill="#092486">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <TextField fx:id="CouncilName" layoutX="212.0" layoutY="160.0" prefHeight="25.0" prefWidth="107.0" promptText="اسم المجلس" />
+        <Label layoutX="140.0" layoutY="164.0" text="اسم الشيخ" textFill="#092486">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+        <TextField fx:id="ShaikhName" layoutX="14.0" layoutY="160.0" prefHeight="25.0" prefWidth="107.0" promptText="اسم الشيخ" />
+        <Label layoutX="333.0" layoutY="237.0" text="الكتاب" textFill="#092486">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+        <TextField fx:id="Book" layoutX="212.0" layoutY="233.0" prefHeight="25.0" prefWidth="107.0" promptText="الكتاب" />
+        <Label layoutX="333.0" layoutY="201.0" text="الموضوع" textFill="#092486">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+        <TextField fx:id="Subject" layoutX="212.0" layoutY="197.0" prefHeight="25.0" prefWidth="107.0" promptText="الموضوع" />
+        <Label layoutX="140.0" layoutY="201.0" text="المسجد" textFill="#092486">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+        <TextField fx:id="Mosque" layoutX="14.0" layoutY="197.0" prefHeight="25.0" prefWidth="107.0" promptText="المسجد" />
+      <Label fx:id="statusLabel" layoutX="31.0" layoutY="292.0" prefHeight="25.0" prefWidth="321.0" />
+    </children>
+</AnchorPane>

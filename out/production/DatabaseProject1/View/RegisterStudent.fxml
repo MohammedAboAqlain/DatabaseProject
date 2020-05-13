@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="rootPane" prefHeight="380.0" prefWidth="428.0" style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.RegisterStudent">
+    <children>
+        <Label layoutX="112.0" layoutY="21.0" prefHeight="48.0" prefWidth="183.0" text="تسجيل طالب جديد" textAlignment="CENTER" textFill="#092486">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+
+
+        <Button layoutX="83.0" layoutY="231.0" mnemonicParsing="false" onAction="#RegisterStudent" prefHeight="25.0" prefWidth="59.0" style="-fx-background-color: #092486;" text="تأكيد" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Button>
+        <Label layoutX="355.0" layoutY="101.0" text="اسم الطالب" textFill="#092486">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font></Label>
+        <TextField fx:id="studentName" layoutX="222.0" layoutY="97.0" prefHeight="25.0" prefWidth="119.0" promptText="اسم الطالب" />
+        <Label layoutX="355.0" layoutY="138.0" text="اسم الأب" textFill="#092486">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font></Label>
+        <TextField fx:id="parentName" layoutX="222.0" layoutY="134.0" prefHeight="25.0" prefWidth="119.0" promptText="اسم الأب" />
+        <Label layoutX="355.0" layoutY="174.0" text="اسم الجد" textFill="#092486">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font></Label>
+        <TextField fx:id="grandParentName" layoutX="222.0" layoutY="170.0" prefHeight="25.0" prefWidth="119.0" promptText="اسم الجد" />
+        <Label layoutX="357.0" layoutY="208.0" text="اسم العائلة" textFill="#092486">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font></Label>
+        <TextField fx:id="familyName" layoutX="222.0" layoutY="204.0" prefHeight="25.0" prefWidth="119.0" promptText="اسم العائلة" />
+        <Label layoutX="147.0" layoutY="103.0" text="رقم الطالب" textFill="#092486">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font></Label>
+        <TextField fx:id="studentID" layoutX="11.0" layoutY="99.0" prefHeight="25.0" prefWidth="119.0" promptText="رقم الطالب" />
+        <Label layoutX="145.0" layoutY="142.0" text="مكان السكن" textFill="#092486">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font></Label>
+        <TextField fx:id="place" layoutX="11.0" layoutY="138.0" prefHeight="25.0" prefWidth="119.0" promptText="مكان السكن" />
+
+        <Label layoutX="149.0" layoutY="178.0" text="رقم الجوال" textFill="#092486">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font></Label>
+        <TextField fx:id="studentMobile" layoutX="11.0" layoutY="174.0" prefHeight="25.0" prefWidth="119.0" promptText="رقم الجوال" />
+
+        <Button layoutX="374.0" layoutY="341.0" mnemonicParsing="false" onAction="#onBackBtn" style="-fx-background-color: #092486;" text="رجوع" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Button>
+        <Label fx:id="statusLabel" layoutX="34.0" layoutY="306.0" prefHeight="25.0" prefWidth="321.0" />
+    </children>
+</AnchorPane>

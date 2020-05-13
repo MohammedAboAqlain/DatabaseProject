@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="rootPane" prefHeight="380.0" prefWidth="428.0" style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.StudentMobile">
+    <children>
+        <Label layoutX="104.0" layoutY="14.0" prefHeight="48.0" prefWidth="220.0" text="اضافة/حذف رقم جوال" textAlignment="CENTER" textFill="#092486">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+
+        <ComboBox fx:id="StudentNumbersComboBox" layoutX="62.0" layoutY="85.0" onAction="#onStudentNumbersComboBox" prefWidth="150.0" promptText="اختر رقم الطالب" />
+        <Label layoutX="232.0" layoutY="85.0" prefHeight="25.0" prefWidth="150.0" text="اختر رقم الطالب المراد تعديله" textFill="#092486">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Label>
+        <ComboBox fx:id="DeleteNumberComboBox" layoutX="122.0" layoutY="204.0" prefHeight="25.0" prefWidth="139.0" promptText="اختر رقم الجوال" />
+        <Label layoutX="277.0" layoutY="208.0" prefHeight="17.0" prefWidth="126.0" text="رقم الجوال المراد حذفه" textFill="#092486">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Label>
+
+        <Button layoutX="42.0" layoutY="151.0" mnemonicParsing="false" onAction="#onAddBtn" prefHeight="25.0" prefWidth="59.0" style="-fx-background-color: #092486;" text="إضافة" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Button>
+        <Button layoutX="42.0" layoutY="204.0" mnemonicParsing="false" onAction="#onDeleteBtn" prefHeight="25.0" prefWidth="59.0" style="-fx-background-color: #092486;" text="حذف" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Button>
+
+
+        <Label layoutX="277.0" layoutY="155.0" prefHeight="17.0" prefWidth="126.0" text="رقم الجوال المراد إضافته" textFill="#092486">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font></Label>
+        <TextField fx:id="studentMobile" layoutX="122.0" layoutY="151.0" prefHeight="25.0" prefWidth="139.0" promptText="رقم الجوال" />
+
+        <Button layoutX="352.0" layoutY="341.0" mnemonicParsing="false" onAction="#onBackBtn" style="-fx-background-color: #092486;" text="رجوع" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Button>
+
+        <Label fx:id="statusLabel" layoutX="31.0" layoutY="274.0" prefHeight="25.0" prefWidth="321.0" />
+
+    </children>
+</AnchorPane>

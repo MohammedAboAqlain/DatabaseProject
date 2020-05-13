@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Main-Class: startProject.Main
+Class-Path: C:\Users\Mohammed Abo Aqlain\IdeaProjects\DatabaseProject1\s
+ rc\startProject\Main.java
+

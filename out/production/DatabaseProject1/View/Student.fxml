@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="rootPane" prefHeight="380.0" prefWidth="409.0" style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Student">
+    <children>
+        <Label layoutX="94.0" layoutY="22.0" prefHeight="48.0" prefWidth="222.0" text="تسجيل وتحرير طلاب" textAlignment="CENTER" textFill="#092486">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Button layoutX="114.0" layoutY="121.0" mnemonicParsing="false" onAction="#onRegisterStudent" prefHeight="37.0" prefWidth="182.0" style="-fx-background-color: #092486;" text="تسجيل طالب جديد" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font></Button>
+        <Button layoutX="114.0" layoutY="223.0" mnemonicParsing="false" onAction="#onDeleteStudent" prefHeight="37.0" prefWidth="182.0" style="-fx-background-color: #092486;" text="حذف طالب" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font></Button>
+        <Button layoutX="114.0" layoutY="173.0" mnemonicParsing="false" onAction="#onUpdateStudent" prefHeight="37.0" prefWidth="182.0" style="-fx-background-color: #092486;" text="تعديل بيانات طالب" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font></Button>
+        <Button layoutX="343.0" layoutY="341.0" mnemonicParsing="false" onAction="#onBackbtn" style="-fx-background-color: #092486;" text="رجوع" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>

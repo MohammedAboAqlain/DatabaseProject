@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="rootPane" prefHeight="380.0" prefWidth="409.0" style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.DeleteStudent">
+    <children>
+        <Label layoutX="134.0" layoutY="35.0" prefHeight="48.0" prefWidth="141.0" text="حذف طالب" textAlignment="CENTER" textFill="#092486">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+
+        <Button layoutX="343.0" layoutY="341.0" mnemonicParsing="false" onAction="#onBackBtn" style="-fx-background-color: #092486;" text="رجوع" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Button>
+        <Button layoutX="73.0" layoutY="157.0" mnemonicParsing="false" onAction="#onDeleteBtn" style="-fx-background-color: #092486;" text="حذف" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Button>
+
+
+        <Label fx:id="statusLabel" layoutX="49.0" layoutY="248.0" prefHeight="36.0" prefWidth="336.0" />
+        <ComboBox fx:id="StudentNumbersComboBox" layoutX="57.0" layoutY="113.0"  prefWidth="150.0" promptText="اختر رقم الطالب" />
+        <Label layoutX="227.0" layoutY="113.0" prefHeight="25.0" prefWidth="150.0" text="اختر رقم الطالب المراد حذفه" textFill="#092486">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
